@@ -6,13 +6,13 @@ body{
 
 .cabecalho{
     color: white;
-    background-color: black;
+    background-color: #10a171;
     text-align: center;
     padding: 30px;
 }
 
 .cabecalho h3{
-    color: rgb(206, 206, 8);
+    color: rgb(255, 255, 255);
 }
 
 p .alinha{
@@ -35,8 +35,11 @@ p .alinha{
 }
 
 .footer{
-    background-color: black;
+    background-color: #10a171;
     color: white;
     text-align: center;
     padding: 5px;
+}
+.bg-laizy {
+    background-color: #10a171;
 }

@@ -7,11 +7,11 @@
 body {
     font-family: sans-serif;
     color: #333;
-    background-color: #e3f2fd; /* Um azul bem claro para o fundo da página de água */
+    background-color: #84afa1; /* Um azul bem claro para o fundo da página de água */
 }
 
 .cabecalho {
-    background-color: #2196f3; /* Um azul mais forte para o cabeçalho da página de água */
+    background-color: #10a171; /* Um azul mais forte para o cabeçalho da página de água */
     color: white;
     padding: 20px;
     text-align: center;
@@ -24,7 +24,7 @@ body {
 
 /* Barra de navegação - mantendo a cor verde do tema principal */
 .navbar-success {
-    background-color: #28a745 !important;
+    background-color: #10a171 !important;
 }
 
 .navbar-nav .nav-link {
@@ -74,17 +74,17 @@ body {
 .card-title {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #1976d2; /* Um azul mais escuro para o título do card */
+    color: #10a171; /* Um azul mais escuro para o título do card */
 }
 
 .btn-primary {
-    background-color: #1976d2;
-    border-color: #1976d2;
+    background-color: #10a171;
+    border-color:  #10a171;
 }
 
 .btn-primary:hover {
-    background-color: #1565c0;
-    border-color: #1565c0;
+    background-color: #10a171;
+    border-color: #10a171;
 }
 
 /* Carrossel */
@@ -117,14 +117,14 @@ body {
 /* Estilos específicos para a página de água (você pode adicionar mais conforme necessário) */
 /* Exemplo: destacar informações importantes sobre água */
 .destaque-agua {
-    color: #0288d1;
+    color: #10a171;
     font-weight: bold;
 }
 
 /* Exemplo: um estilo diferente para um subtítulo relacionado à água */
 .subtitulo-agua {
-    color: #42a5f5;
+    color: #10a171;
     margin-top: 20px;
-    border-bottom: 2px solid #42a5f5;
+    border-bottom: 2px solid #10a171;
     padding-bottom: 5px;
 }

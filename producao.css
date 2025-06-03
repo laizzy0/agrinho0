@@ -4,12 +4,12 @@
 body {
     font-family: sans-serif;
     color: #333;
-    background-color: #fff8e1; /* Um amarelo bem claro para o fundo da página de produção */
+    background-color: #84afa1; /* Um amarelo bem claro para o fundo da página de produção */
 }
 
 .cabecalho {
-    background-color: #ffc107; /* Um amarelo mais vibrante para o cabeçalho da página de produção */
-    color: #212529; /* Cor do texto escura para contraste com o amarelo */
+    background-color: #10a171; /* Um amarelo mais vibrante para o cabeçalho da página de produção */
+    color: #fdfeff; /* Cor do texto escura para contraste com o amarelo */
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
@@ -52,7 +52,7 @@ body {
 
 /* Cards */
 .card {
-    border: 1px solid #ffe082; /* Borda amarela clara para os cards */
+    border: 1px solid #76ceb0; /* Borda amarela clara para os cards */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -69,4 +69,4 @@ body {
 }
 
 .card-title {
-    font-size;}
+    font-size: 100px}
