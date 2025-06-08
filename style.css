@@ -1,42 +1,187 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Modern, clean font */
+    background-color: #f8f9fa; /* Light grey background for a softer look */
+    color: #343a40; /* Darker text for readability */
 }
 
-.cabecalho{
-    color: white;
-    background-color: black;
+/* Header Section (cabecalho) */
+.cabecalho {
+    background-color: #28a745; /* Bootstrap success green */
+    color: #fff;
+    padding: 60px 20px; /* More padding for a bolder header */
     text-align: center;
-    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 30px; /* Space below header */
+    overflow: hidden; /* Ensure animation doesn't create scrollbars */
 }
 
-.cabecalho h3{
-    color: rgb(206, 206, 8);
+.cabecalho h1 {
+    font-size: 3.5rem; /* Larger, more impactful title */
+    margin-bottom: 10px;
+    font-weight: 700; /* Bold font weight */
+    /* ANIMATION FOR AGRINHO 2025 TITLE */
+    animation: fadeInDown 1.5s ease-out forwards; /* Apply animation */
+    opacity: 0; /* Start hidden for animation */
 }
 
-p .alinha{
-    text-align: right;
-}
-.img-agro{
-    width: 300px;
-}
-
-.br-3{
-    border-radius: 15px;
+.cabecalho h3 {
+    font-size: 1.75rem; /* Slightly larger subtitle */
+    font-weight: 300; /* Lighter font weight for contrast */
+    /* Optional: Add a slight delay for the subtitle to appear after the main title */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
 }
 
-.img-card{
-    max-height: 250px;
+/* Keyframes for the fadeInDown animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Start 20px above its final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at its final position */
+    }
 }
 
-.img-slide{
-    max-height: 400px;
+/* Keyframes for a simple fade-in animation (for the subtitle) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.footer{
-    background-color: black;
-    color: white;
+
+/* Navbar */
+.navbar {
+    border-radius: 0; /* Ensure no rounded corners by default */
+    border-bottom: 3px solid #218838; /* Darker green border at the bottom */
+}
+
+.navbar-nav .nav-link {
+    padding: 0.75rem 1.25rem; /* More generous padding for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+    font-weight: 500; /* Slightly bolder links */
+    text-transform: uppercase; /* Uppercase for a modern touch */
+    letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: #218838; /* Darker green on hover/active */
+    color: #fff !important; /* Ensure text remains white */
+    border-radius: 5px; /* Slightly rounded corners on hover */
+}
+
+/* First content section - Text and Image */
+.container .row.pt-5:first-of-type {
+    margin-top: 50px; /* Add some space from the navbar */
+}
+
+.container h2 {
+    font-size: 2.5rem; /* Larger heading */
+    color: #28a745; /* Green heading color */
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.alinha {
+    font-size: 1.15rem; /* Slightly larger paragraph text */
+    line-height: 1.8; /* Increased line height for readability */
+    text-align: justify; /* Justify text for a clean look */
+    color: #495057; /* Slightly lighter text color */
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Cards Section */
+.row.pt-5 .col-md-4 { /* Target columns within this row */
+    display: flex;
+    justify-content: center; /* Center cards in columns */
+    margin-bottom: 30px; /* Add space between rows of cards on smaller screens */
+}
+
+.card {
+    border: none; /* Remove default Bootstrap border */
+    border-radius: 10px; /* Rounded corners for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    overflow: hidden; /* Ensures image corners are rounded */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.card-img-top {
+    border-bottom: 1px solid #eee; /* Subtle separator */
+    object-fit: cover; /* Ensures image covers the area, crops if needed */
+    height: 180px; /* Fixed height for consistency */
+}
+
+.card-body {
+    padding: 25px; /* More padding inside card body */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger card title */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 0.95rem; /* Slightly smaller text for concise descriptions */
+    color: #6c757d; /* Lighter text color */
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Use success green for buttons */
+    border-color: #28a745;
+    font-weight: 600;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #218838;
+}
+
+/* Carousel Section */
+.carousel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-item img {
+    height: 450px; /* Fixed height for carousel images */
+    object-fit: cover; /* Cover the area, cropping if necessary */
+    border-radius: 10px; /* Rounded corners for carousel images */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background for controls */
+    border-radius: 50%; /* Make controls circular */
+    padding: 15px; /* Add padding to controls */
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40; /* Darker footer */
+    color: #f8f9fa; /* Light text */
     text-align: center;
-    padding: 5px;
+    padding: 25px 15px;
+    margin-top: 50px; /* Space above footer */
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
