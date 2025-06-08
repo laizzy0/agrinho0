@@ -9,7 +9,7 @@ body {
 
 /* Header Section (cabecalho) */
 .cabecalho {
-    background-color: #218838; /* Um verde mais escuro e vibrante para o cabeçalho da página de energia */
+    background-color: #28a745; /* Um verde mais escuro e vibrante para o cabeçalho da página de energia */
     color: #fff;
     padding: 60px 20px; /* Mais padding para um cabeçalho imponente como no index */
     text-align: center;
@@ -61,7 +61,7 @@ body {
 /* Navbar - Mantendo a cor verde do tema principal (para consistência do site) */
 .navbar {
     border-radius: 0;
-    border-bottom: 3px solid #218838; /* Borda inferior verde escura */
+    border-bottom: 3px solid #28a745; /* Borda inferior verde escura */
 }
 
 .navbar-nav .nav-link {
@@ -74,7 +74,7 @@ body {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    background-color: #218838; /* Verde escuro no hover/ativo */
+    background-color: #28a745; /* Verde escuro no hover/ativo */
     color: #fff !important; /* Garante que o texto permaneça branco */
     border-radius: 5px; /* Bordas levemente arredondadas no hover */
 }
@@ -86,7 +86,7 @@ body {
 
 .container h2 {
     font-size: 2.5rem; /* Título maior */
-    color: #218838; /* Cor verde para o título da seção */
+    color: #28a745; /* Cor verde para o título da seção */
     margin-bottom: 25px;
     font-weight: 600;
 }
@@ -137,7 +137,7 @@ img {
     font-size: 1.5rem; /* Título do card maior */
     font-weight: 600;
     margin-bottom: 15px;
-    color: #218838; /* Cor verde para o título do card */
+    color: #28a745; /* Cor verde para o título do card */
 }
 
 .card-text {
@@ -147,15 +147,15 @@ img {
 }
 
 .btn-primary {
-    background-color: #218838; /* Usa o verde principal para os botões */
-    border-color: #218838;
+    background-color: #28a745; /* Usa o verde principal para os botões */
+    border-color: #28a745;
     font-weight: 600;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #218838; /* Verde mais escuro no hover */
-    border-color:#218838;
+    background-color: #28a745; /* Verde mais escuro no hover */
+    border-color: #28a745;
 }
 
 /* Seção do Carrossel */

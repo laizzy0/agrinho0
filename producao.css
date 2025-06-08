@@ -2,41 +2,38 @@
 
 /* General Body Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Mantém a fonte do index */
-    background-color: #fff8e1; /* Um amarelo bem claro para o fundo da página de produção */
-    color: #343a40; /* Cor de texto do index */
+    font-family: 'Arial', sans-serif; 
+    background-color: #fff8e1;
+    color: #343a40; 
 }
 
 /* Header Section (cabecalho) */
 .cabecalho {
-    background-color: #218838; /* Amarelo vibrante para o cabeçalho da página de produção */
-    color: #212529; /* Cor do texto escura para contraste com o amarelo */
-    padding: 60px 20px; /* Mais padding para um cabeçalho imponente como no index */
+    background-color: #28a745;
+    color: #ffffff; 
+    padding: 60px 20px; 
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
-    margin-bottom: 30px; /* Espaço abaixo do cabeçalho */
-    overflow: hidden; /* Garante que a animação não crie barras de rolagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px; 
+    overflow: hidden;
 }
 
 .cabecalho h1 {
-    font-size: 3.5rem; /* Título maior e mais impactante */
+    font-size: 3.5rem;
     margin-bottom: 10px;
-    font-weight: 700; /* Peso da fonte negrito */
-    /* Animação para o título (igual ao do index) */
+    font-weight: 700; 
     animation: fadeInDown 1.5s ease-out forwards;
-    opacity: 0; /* Começa escondido para a animação */
+    opacity: 0; 
 }
 
 .cabecalho h3 {
-    font-size: 1.75rem; /* Subtítulo um pouco maior */
-    font-weight: 300; /* Peso da fonte mais leve para contraste */
-    /* Animação para o subtítulo (igual ao do index, com delay) */
+    font-size: 1.75rem;
+    font-weight: 300; 
     animation: fadeIn 2s ease-out forwards;
     animation-delay: 0.5s;
     opacity: 0;
 }
 
-/* Keyframes para a animação fadeInDown (igual ao do index) */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -48,7 +45,6 @@ body {
     }
 }
 
-/* Keyframes para a animação fadeIn (igual ao do index) */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -58,126 +54,120 @@ body {
     }
 }
 
-/* Navbar - Mantendo a cor verde do tema principal (para consistência do site) */
 .navbar {
     border-radius: 0;
-    border-bottom: 3px solid #218838; /* Borda inferior verde escura */
+    border-bottom: 3px solid #28a745;
 }
 
 .navbar-nav .nav-link {
-    padding: 0.75rem 1.25rem; /* Padding generoso para os links */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave no hover */
-    font-weight: 500; /* Links um pouco mais negritos */
-    text-transform: uppercase; /* Maiúsculas para um toque moderno */
-    letter-spacing: 0.5px; /* Pequeno espaçamento entre letras */
+    padding: 0.75rem 1.25rem; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    background-color: #218838; /* Verde escuro no hover/ativo */
-    color: #fff !important; /* Garante que o texto permaneça branco */
-    border-radius: 5px; /* Bordas levemente arredondadas no hover */
+    background-color: #28a745;
+    color: #fff !important;
+    border-radius: 5px; 
 }
 
-/* Conteúdo Principal (dentro do container) */
 .container .row.pt-5:first-of-type {
-    margin-top: 50px; /* Espaço do topo da navbar */
+    margin-top: 50px; 
 }
 
 .container h2 {
-    font-size: 2.5rem; /* Título maior */
-    color: #218838; /* Cor amarela para o título da seção */
+    font-size: 2.5rem;
+    color: #28a745;
     margin-bottom: 25px;
     font-weight: 600;
 }
 
 .alinha {
-    font-size: 1.15rem; /* Texto de parágrafo um pouco maior */
-    line-height: 1.8; /* Altura da linha aumentada para legibilidade */
-    text-align: justify; /* Texto justificado para um visual limpo */
-    color: #495057; /* Cor de texto levemente mais clara */
+    font-size: 1.15rem; 
+    line-height: 1.8;
+    text-align: justify;
+    color: #495057;
 }
 
-/* Imagens em geral */
 img {
-    max-width: 100%; /* Garante que as imagens sejam responsivas */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%;
+    height: auto;
 }
 
-/* Seção de Cards */
 .row.pt-5 .col-md-4 {
     display: flex;
-    justify-content: center; /* Centraliza os cards nas colunas */
-    margin-bottom: 30px; /* Adiciona espaço entre as linhas de cards em telas menores */
+    justify-content: center; 
+    margin-bottom: 30px;
 }
 
 .card {
-    border: none; /* Remove a borda padrão do Bootstrap */
-    border-radius: 10px; /* Cantos arredondados para os cards */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover suave */
-    overflow: hidden; /* Garante que os cantos da imagem também sejam arredondados */
+    border: none; 
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    overflow: hidden; 
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Levanta o card no hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada no hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-    border-bottom: 1px solid #ffe082; /* Separador sutil amarelo claro */
-    object-fit: cover; /* Garante que a imagem cubra a área, cortando se necessário */
-    height: 180px; /* Altura fixa para consistência */
+    border-bottom: 1px solid #ffe082;
+    object-fit: cover; 
+    height: 180px; 
 }
 
 .card-body {
-    padding: 25px; /* Mais padding dentro do corpo do card */
+    padding: 25px;
 }
 
 .card-title {
-    font-size: 1.5rem; /* Título do card maior */
+    font-size: 1.5rem; 
     font-weight: 600;
     margin-bottom: 15px;
-    color: #218838; /* Cor amarela para o título do card */
+    color: #28a745;
 }
 
 .card-text {
-    font-size: 0.95rem; /* Texto conciso para descrições */
-    color: #6c757d; /* Cor de texto mais clara */
+    font-size: 0.95rem;
+    color: #6c757d; 
     margin-bottom: 20px;
 }
 
 .btn-primary {
-    background-color: #218838; /* Usa o amarelo principal para os botões */
-    border-color: #218838;
+    background-color: #28a745;
+    border-color: #28a745;
     font-weight: 600;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #218838; /* Amarelo mais escuro no hover */
-    border-color: #218838;
+    background-color:#28a745; 
+    border-color: #28a745;
 }
 
-/* Seção do Carrossel */
 .carousel {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .carousel-item img {
-    height: 450px; /* Altura fixa para as imagens do carrossel */
-    object-fit: cover; /* Cobrir a área, cortando se necessário */
-    border-radius: 10px; /* Cantos arredondados para as imagens do carrossel */
+    height: 450px;
+    object-fit: cover; 
+    border-radius: 10px; 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para os controles */
-    border-radius: 50%; /* Controles circulares */
-    padding: 15px; /* Padding para os controles */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%; 
+    padding: 15px;
 }
 
-/* Rodapé - Mantendo a cor cinza do tema principal (para consistência do site) */
 .footer {
     background-color: #343a40;
     color: #f8f9fa;
