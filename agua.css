@@ -9,7 +9,7 @@ body {
 
 /* Header Section (cabecalho) */
 .cabecalho {
-    background-color: #1976d2; /* Azul forte para o cabeçalho da página de água */
+    background-color: #28a745; /* Azul forte para o cabeçalho da página de água */
     color: #fff;
     padding: 60px 20px; /* Mais padding para um cabeçalho imponente como no index */
     text-align: center;
@@ -86,7 +86,7 @@ body {
 
 .container h2 {
     font-size: 2.5rem; /* Título maior */
-    color: #1976d2; /* Cor azul para o título da seção */
+    color: #28a745; /* Cor azul para o título da seção */
     margin-bottom: 25px;
     font-weight: 600;
 }
@@ -137,7 +137,7 @@ img {
     font-size: 1.5rem; /* Título do card maior */
     font-weight: 600;
     margin-bottom: 15px;
-    color: #1976d2; /* Cor azul para o título do card */
+    color: #28a745; /* Cor azul para o título do card */
 }
 
 .card-text {
@@ -147,15 +147,15 @@ img {
 }
 
 .btn-primary {
-    background-color: #1976d2; /* Usa o azul principal para os botões */
-    border-color: #1976d2;
+    background-color: #28a745; /* Usa o azul principal para os botões */
+    border-color: #28a745;
     font-weight: 600;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #1565c0; /* Azul mais escuro no hover */
-    border-color: #1565c0;
+    background-color: #28a745; /* Azul mais escuro no hover */
+    border-color: #28a745;
 }
 
 /* Seção do Carrossel */
