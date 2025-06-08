@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produção e Industrialização - Agrinho 2025</title>
+    <title>AGRINHO 2025 - Produção e Industrialização</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="producao.css">
@@ -12,20 +12,20 @@
 
 <body>
     <section class="cabecalho">
-        <h1>AGRINHO 2025</h1>
-        <h3>Produção e Industrialização no Campo</h3>
+        <h1>PRODUÇÃO E INDUSTRIALIZAÇÃO</h1>
+        <h3>Do Campo à Mesa: Valorizando o Alimento</h3>
     </section>
 
     <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Navegação">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Página Inicial |</a>
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Página Inicial |</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
@@ -34,134 +34,90 @@
                         <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="producao.html">Produção</a>
+                        <a class="nav-link active text-white" href="producao.html">Produção</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container">
-        <div class="row pt-5">
-            <div class="col ">
+    <div class="container">
+        <div class="row pt-5 align-items-center">
+            <div class="col-md-6">
                 <div>
-                    <h2>A Dinâmica da Produção e Industrialização no Campo</h2>
-                    <p class="alinha">A produção agrícola e a sua subsequente industrialização são pilares da economia,
-                        especialmente em regiões com forte vocação rural. Compreender os processos, os desafios e as
-                        inovações neste setor é fundamental para promover o desenvolvimento econômico e social, além de
-                        fortalecer a conexão entre o campo e a cidade.</p>
-                    <p class="alinha">Nesta seção, exploraremos as diversas etapas da produção, desde o cultivo até o
-                        processamento e a distribuição, bem como o papel da tecnologia e da sustentabilidade neste
-                        contexto.</p>
+                    <h2>A Jornada do Alimento: Do Campo à sua Mesa</h2>
+                    <p class="alinha">A produção agrícola é a base da nossa alimentação, mas o caminho do alimento desde a lavoura até o consumidor envolve muito mais do que se imagina. Tecnologias, processos de industrialização e a logística são cruciais para garantir que produtos frescos e seguros cheguem às cidades. Entender essa jornada é essencial para valorizar o trabalho do produtor rural e compreender a complexidade da cadeia produtiva, promovendo um consumo mais consciente e a redução do desperdício.</p>
                 </div>
             </div>
-            <div class="col text-center">
+            <div class="col-md-6 text-center">
                 <div>
-                    <img class="img-agro br-3" src="./assets/image/producao_rural_principal.jpg"
-                        alt="Imagem representativa de produção rural.">
+                    <img class="img-fluid rounded shadow-sm" src="./assets/image/harvest.png" alt="Colheita em campo de trigo.">
                 </div>
             </div>
         </div>
 
-        <h3 class="text-center pt-5 pb-3 subtitulo-producao">Desafios na Produção e Industrialização Rural</h3>
-        <div class="row pt-3">
-            <div class="col-md-6">
-                <p><span class="destaque-producao">Variações Climáticas:</span> Eventos climáticos extremos podem afetar
-                    significativamente a produção agrícola.</p>
+        <div class="row pt-5 justify-content-center g-4">
+            <h3 class="text-center pb-3">Inovação na Produção Rural</h3>
+            
+            <div class="col-md-4 col-sm-6 d-flex">
+                <div class="card w-100 shadow-sm border-0">
+                    <img src="./assets/image/precision_farming.png" class="img-card card-img-top p-3" alt="Trator com tecnologia de agricultura de precisão.">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Agricultura de Precisão</h5>
+                        <p class="card-text flex-grow-1">Descubra como a tecnologia, como drones e sensores, otimiza o uso de recursos e aumenta a produtividade no campo, tornando a agricultura mais eficiente.</p>
+                        <a href="#" class="btn btn-primary mt-auto">Saiba Mais</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <p><span class="destaque-producao">Logística e Distribuição:</span> O transporte e a distribuição dos
-                    produtos podem ser complexos e onerosos.</p>
-            </div>
-            <div class="col-md-6">
-                <p><span class="destaque-producao">Tecnologia e Inovação:</span> A adoção de novas tecnologias nem sempre
-                    é acessível a todos os produtores.</p>
-            </div>
-            <div class="col-md-6">
-                <p><span class="destaque-producao">Competitividade de Mercado:</span> Os produtores rurais muitas vezes
-                    enfrentam a concorrência de grandes empresas e mercados globais.</p>
-            </div>
-        </div>
 
-        <h3 class="text-center pt-5 pb-3 subtitulo-producao">Etapas e Inovações na Produção Rural</h3>
-        <div class="row pt-3">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./assets/image/agro.png" class="img-card card-img-top"
-                        alt="Imagem de plantio rural.">
-                    <div class="card-body">
-                        <h5 class="card-title">Plantio e Cultivo</h5>
-                        <p class="card-text">Técnicas e tecnologias para otimizar o plantio e o manejo das culturas.</p>
-                        <a href="#" class="btn btn-primary" aria-label="Saiba mais sobre Plantio e Cultivo">Saiba mais</a>
+            <div class="col-md-4 col-sm-6 d-flex">
+                <div class="card w-100 shadow-sm border-0">
+                    <img src="./assets/image/food_processing.png" class="img-card card-img-top p-3" alt="Produtos processados em pequena fábrica rural.">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Agroindústria Familiar</h5>
+                        <p class="card-text flex-grow-1">Conheça o processo de transformação de matérias-primas agrícolas em produtos com valor agregado, gerando renda e desenvolvimento local.</p>
+                        <a href="#" class="btn btn-primary mt-auto">Descobrir</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./assets/image/energia sus (1).png" class="img-card card-img-top"
-                        alt="Imagem de colheita rural.">
-                    <div class="card-body">
-                        <h5 class="card-title">Colheita e Processamento</h5>
-                        <p class="card-text">Métodos eficientes para a colheita e o primeiro processamento dos produtos
-                            agrícolas.</p>
-                        <a href="#" class="btn btn-primary" aria-label="Saiba mais sobre Colheita e Processamento Primário">Saiba
-                            mais</a>
-                    </div>
-                </div>
-            </div>
-             <div class="col-md-4">
-                <div class="card">
-                    <img src="./assets/image/energia sus (1).png" class="img-card card-img-top"
-                        alt="Imagem de colheita rural.">
-                    <div class="card-body">
-                        <h5 class="card-title">Industrialização e Beneficiamento</h5>
-                        <p class="card-text">O papel da agroindústria na transformação dos produtos brutos em alimentos
-                            e outros bens</p>
-                        <a href="#" class="btn btn-primary" aria-label="Saiba mais sobre Colheita e Processamento Primário">Saiba
-                            mais</a>
-            <div class="col-md-4">
-                <div class="card;">
-                    <img src="./assets/image/Energy (1).gif" class="img-card card-img-top;"
-                        alt="Imagem de agroindústria.">
-                    <div class="card-body">
-                        <h5 class="card-title">Industrialização e Beneficiamento</h5>
-                        <p class="card-text">O papel da agroindústria na transformação dos produtos brutos em alimentos
-                            e outros bens.</p>
-                        <a href="#" class="btn btn-primary" aria-label="Saiba mais sobre Industrialização e Beneficiamento">Saiba
-                            mais</a>
+
+            <div class="col-md-4 col-sm-6 d-flex">
+                <div class="card w-100 shadow-sm border-0">
+                    <img src="./assets/image/food_safety.png" class="img-card card-img-top p-3" alt="Alimentos frescos e rótulo de qualidade.">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">Segurança Alimentar</h5>
+                        <p class="card-text flex-grow-1">Entenda as práticas e regulamentações que garantem a segurança e a qualidade dos alimentos que chegam à sua mesa, do plantio ao consumo.</p>
+                        <a href="#" class="btn btn-primary mt-auto">Ver Mais</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="carouselExample" class="carousel slide pt-5 pb-3">
+        <div id="carouselExample" class="carousel slide pt-4 pb-3 shadow-lg rounded">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/image/producao_rural_slide1.jpg" class="img-slide d-block w-100"
-                        alt="Imagem de campo cultivado.">
+                    <img src="./assets/image/production_farm_1.gif" class="img-slide d-block w-100 rounded" alt="Colheita moderna no campo.">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/image/producao_rural_slide2.jpg" class=" img-slide d-block w-100"
-                        alt="Imagem de colheita mecanizada.">
+                    <img src="./assets/image/production_farm_2.gif" class="img-slide d-block w-100 rounded" alt="Drone sobre lavoura.">
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/image/producao_rural_slide3.jpg" class=" img-slide d-block w-100"
-                        alt="Imagem de indústria de alimentos.">
+                 <div class="carousel-item">
+                    <img src="./assets/image/production_farm_3.gif" class="img-slide d-block w-100 rounded" alt="Embalagem de produtos agrícolas.">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </main>
+    </div>
 
-    <div class="footer" role="contentinfo">
-        <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
+    <div class="footer">
+        <p>Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo cidade.</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
