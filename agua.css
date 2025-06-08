@@ -1,130 +1,189 @@
 /* agua.css */
 
-/* Você pode importar o Bootstrap diretamente aqui se preferir, */
-/* mas como você já o está importando no HTML, não é necessário fazer novamente. */
-/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
-
+/* General Body Styles */
 body {
-    font-family: sans-serif;
-    color: #333;
-    background-color: #e3f2fd; /* Um azul bem claro para o fundo da página de água */
+    font-family: 'Arial', sans-serif; /* Mantém a fonte do index */
+    background-color: #e3f2fd; /* Azul bem claro para o fundo da página de água */
+    color: #343a40; /* Cor de texto do index */
 }
 
+/* Header Section (cabecalho) */
 .cabecalho {
-    background-color: #2196f3; /* Um azul mais forte para o cabeçalho da página de água */
-    color: white;
-    padding: 20px;
+    background-color: #1976d2; /* Azul forte para o cabeçalho da página de água */
+    color: #fff;
+    padding: 60px 20px; /* Mais padding para um cabeçalho imponente como no index */
     text-align: center;
-    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+    margin-bottom: 30px; /* Espaço abaixo do cabeçalho */
+    overflow: hidden; /* Garante que a animação não crie barras de rolagem */
 }
 
 .cabecalho h1 {
-    margin-bottom: 5px;
+    font-size: 3.5rem; /* Título maior e mais impactante */
+    margin-bottom: 10px;
+    font-weight: 700; /* Peso da fonte negrito */
+    /* Animação para o título (igual ao do index) */
+    animation: fadeInDown 1.5s ease-out forwards;
+    opacity: 0; /* Começa escondido para a animação */
 }
 
-/* Barra de navegação - mantendo a cor verde do tema principal */
-.navbar-success {
-    background-color: #28a745 !important;
+.cabecalho h3 {
+    font-size: 1.75rem; /* Subtítulo um pouco maior */
+    font-weight: 300; /* Peso da fonte mais leve para contraste */
+    /* Animação para o subtítulo (igual ao do index, com delay) */
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+/* Keyframes para a animação fadeInDown (igual ao do index) */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes para a animação fadeIn (igual ao do index) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navbar - Mantendo a cor verde do tema principal (para consistência do site) */
+.navbar {
+    border-radius: 0;
+    border-bottom: 3px solid #218838; /* Borda inferior verde escura */
 }
 
 .navbar-nav .nav-link {
-    padding: 10px 15px;
+    padding: 0.75rem 1.25rem; /* Padding generoso para os links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave no hover */
+    font-weight: 500; /* Links um pouco mais negritos */
+    text-transform: uppercase; /* Maiúsculas para um toque moderno */
+    letter-spacing: 0.5px; /* Pequeno espaçamento entre letras */
 }
 
+.navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    font-weight: bold;
+    background-color: #218838; /* Verde escuro no hover/ativo */
+    color: #fff !important; /* Garante que o texto permaneça branco */
+    border-radius: 5px; /* Bordas levemente arredondadas no hover */
 }
 
-/* Container principal */
-.container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Conteúdo Principal (dentro do container) */
+.container .row.pt-5:first-of-type {
+    margin-top: 50px; /* Espaço do topo da navbar */
+}
+
+.container h2 {
+    font-size: 2.5rem; /* Título maior */
+    color: #1976d2; /* Cor azul para o título da seção */
+    margin-bottom: 25px;
+    font-weight: 600;
 }
 
 .alinha {
-    text-align: justify;
+    font-size: 1.15rem; /* Texto de parágrafo um pouco maior */
+    line-height: 1.8; /* Altura da linha aumentada para legibilidade */
+    text-align: justify; /* Texto justificado para um visual limpo */
+    color: #495057; /* Cor de texto levemente mais clara */
 }
 
-.img-agro {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
+/* Imagens em geral */
+img {
+    max-width: 100%; /* Garante que as imagens sejam responsivas */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-/* Cards */
+/* Seção de Cards */
+.row.pt-5 .col-md-4 {
+    display: flex;
+    justify-content: center; /* Centraliza os cards nas colunas */
+    margin-bottom: 30px; /* Adiciona espaço entre as linhas de cards em telas menores */
+}
+
 .card {
-    border: 1px solid #bbdefb; /* Borda azul clara para os cards */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: none; /* Remove a borda padrão do Bootstrap */
+    border-radius: 10px; /* Cantos arredondados para os cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover suave */
+    overflow: hidden; /* Garante que os cantos da imagem também sejam arredondados */
 }
 
-.img-card {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    max-height: 150px;
-    object-fit: cover;
+.card:hover {
+    transform: translateY(-5px); /* Levanta o card no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada no hover */
+}
+
+.card-img-top {
+    border-bottom: 1px solid #bbdefb; /* Separador sutil */
+    object-fit: cover; /* Garante que a imagem cubra a área, cortando se necessário */
+    height: 180px; /* Altura fixa para consistência */
 }
 
 .card-body {
-    padding: 15px;
+    padding: 25px; /* Mais padding dentro do corpo do card */
 }
 
 .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #1976d2; /* Um azul mais escuro para o título do card */
+    font-size: 1.5rem; /* Título do card maior */
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1976d2; /* Cor azul para o título do card */
+}
+
+.card-text {
+    font-size: 0.95rem; /* Texto conciso para descrições */
+    color: #6c757d; /* Cor de texto mais clara */
+    margin-bottom: 20px;
 }
 
 .btn-primary {
-    background-color: #1976d2;
+    background-color: #1976d2; /* Usa o azul principal para os botões */
     border-color: #1976d2;
+    font-weight: 600;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #1565c0;
+    background-color: #1565c0; /* Azul mais escuro no hover */
     border-color: #1565c0;
 }
 
-/* Carrossel */
-.img-slide {
-    max-height: 300px;
-    object-fit: contain;
-    background-color: #f0f8ff; /* Um azul bem claro para o fundo do carrossel */
+/* Seção do Carrossel */
+.carousel {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    opacity: 0.7;
+.carousel-item img {
+    height: 450px; /* Altura fixa para as imagens do carrossel */
+    object-fit: cover; /* Cobrir a área, cortando se necessário */
+    border-radius: 10px; /* Cantos arredondados para as imagens do carrossel */
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 0.9;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para os controles */
+    border-radius: 50%; /* Controles circulares */
+    padding: 15px; /* Padding para os controles */
 }
 
-/* Rodapé - mantendo a cor cinza do tema principal */
+/* Rodapé - Mantendo a cor cinza do tema principal (para consistência do site) */
 .footer {
     background-color: #343a40;
-    color: white;
+    color: #f8f9fa;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    border-radius: 0 0 8px 8px;
-}
-
-/* Estilos específicos para a página de água (você pode adicionar mais conforme necessário) */
-/* Exemplo: destacar informações importantes sobre água */
-.destaque-agua {
-    color: #0288d1;
-    font-weight: bold;
-}
-
-/* Exemplo: um estilo diferente para um subtítulo relacionado à água */
-.subtitulo-agua {
-    color: #42a5f5;
-    margin-top: 20px;
-    border-bottom: 2px solid #42a5f5;
-    padding-bottom: 5px;
+    padding: 25px 15px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
